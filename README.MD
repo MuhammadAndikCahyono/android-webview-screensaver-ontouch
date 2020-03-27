@@ -10,4 +10,6 @@ The Android app has a screensaver - a short video that pops up if the user has n
 
 If the user clicks around on the app, the screensaver doesn't pop up. Once the user stops interacting with the app, there's a 10 second wait, and then the screensaver appears. The screensaver is a video of a flame.
 
+The difference between this project and [android-webview-textinput](https://github.com/fullStackOasis/android-webview-textinput) is that this project starts with a WebView of a webpage, and that project starts with a regular `Activity` that has a `TextView` and nothing else.
+
 ![Android WebView goes to screensaver after 10 seconds of inactivity](https://raw.githubusercontent.com/fullStackOasis/android-webview-screensaver-ontouch/master/webview-screensaver-ontouch.gif)
