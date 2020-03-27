@@ -22,6 +22,16 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         super.onCreate(savedInstanceState);
         Context applicationContext = this.getApplicationContext();
         final WebView myWebView = new WebView(applicationContext);
+
+        // JavaScript runs in this "browser" (WebView)
+        myWebView.getSettings().setJavaScriptEnabled(true);
+
+        // Allow DOM Storage. Probably do not need this, but some webpages might.
+        myWebView.getSettings().setDomStorageEnabled(true);
+
+        // If you do not clear the cache, the webpage will never refresh.
+        // You won't see any new changes that you've made to the webpage.
+        myWebView.clearCache(true);
         setContentView(myWebView);
         myWebView.setOnTouchListener(this);
 
